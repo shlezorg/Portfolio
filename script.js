@@ -31,3 +31,20 @@ document
     });
 
 });
+
+const faqItems = document.querySelectorAll(".faq-item");
+
+faqItems.forEach(item => {
+    item.addEventListener("click", () => {
+
+        // close others (optional but recommended)
+        faqItems.forEach(i => {
+            if (i !== item) {
+                i.classList.remove("active");
+            }
+        });
+
+        // toggle current
+        item.classList.toggle("active");
+    });
+});
