@@ -565,15 +565,22 @@ height: 100%;
     .contact form{
         flex-direction: column;
     }
+    .faq-container{
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
     .faq-item{
-        padding:2rem;
+        padding: 1.5rem;
+        border-radius: 1.5rem;
     }
 
     .faq-item h3{
-        font-size:1.7rem;
+        font-size: 1.6rem;
+        line-height: 1.4;
     }
 
     .faq-item p{
-        font-size:1.4rem;
+        font-size: 1.4rem;
     }
 }
